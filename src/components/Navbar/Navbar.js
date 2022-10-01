@@ -11,7 +11,10 @@ const Navbar = () => {
       <nav className="flex justify-between items-center lg:px-4 px-2 h-12">
         <div className="flex items-center shrink-0">
           <Link to="/" className="flex items-center">
-            <FaReddit className="fill-blue-500 lg:mr-2" size={34} />
+            <FaReddit
+              className="fill-blue-500 hover:fill-blue-600 lg:mr-2"
+              size={34}
+            />
             <img
               src={LogoText}
               alt="logo"
@@ -24,7 +27,9 @@ const Navbar = () => {
           <Input
             type={"search"}
             placeholder={"Search Bluedit"}
-            styles={"w-full bg-gray-100 p-1 focus:outline-none placeholder:text-sm"}
+            styles={
+              "w-full bg-gray-100 p-1 focus:outline-none placeholder:text-sm"
+            }
           />
         </div>
         <div className="flex">
